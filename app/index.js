@@ -1,11 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
 require("./index.css");
-
-export default class App extends Component {
-  render() {
-    return <div>Hello, everyone!</div>;
-  }
-}
+import App from "./components/App";
 
 ReactDOM.render(<App />, document.getElementById("app"));
