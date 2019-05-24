@@ -10,5 +10,3 @@ Notable patterns used:
 - Composition
 - Modularity
 - State management
-
-Based on https://github.com/tylermcginnis/react-fundamentals by @tylermcginnis.
