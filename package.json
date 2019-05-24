@@ -25,7 +25,6 @@
   "homepage": "https://github.com/Doesntmeananything/react-fundamentals#readme",
   "dependencies": {
     "axios": "^0.18.0",
-    "dotenv": "^8.0.0",
     "prop-types": "^15.7.2",
     "query-string": "^6.5.0",
     "react": "^16.8.6",

@@ -18,6 +18,7 @@ module.exports = {
   devServer: {
     historyApiFallback: true
   },
+  target: "node",
   plugins: [
     new HtmlWebpackPlugin({
       template: "app/index.html"

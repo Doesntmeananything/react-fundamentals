@@ -1,13 +1,11 @@
 import axios from "axios";
-require("dotenv").config();
+import config from "../../.cfg.js";
 
-const id = process.env.GITHUB_ID;
-const secret = process.env.GITHUB_SECRET;
-const params = `?client_id=${id}&client_secret=${secret}`;
+const params = `?client_id=${config.id}&client_secret=${config.secret}`;
 
 function getProfile(username) {
   return axios
-    .get(`https://api.github.com/users${username}${params}`)
+    .get(`https://api.github.com/users/${username}${params}`)
     .then(function(user) {
       return user.data;
     });
@@ -15,7 +13,7 @@ function getProfile(username) {
 
 function getRepos(username) {
   return axios.get(
-    `https://api.github.com/users${username}/repos${params}$per_page=100`
+    `https://api.github.com/users/${username}/repos${params}$per_page=100`
   );
 }
 
